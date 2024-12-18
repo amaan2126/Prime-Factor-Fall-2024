@@ -14,4 +14,8 @@ def test_non_integer_input():
     with pytest.raises(ValueError):
         generate_prime_factors(1.5)
 
+def test_prime_factors_of_1():
+    assert generate_prime_factors(1) == []
+
+
 
