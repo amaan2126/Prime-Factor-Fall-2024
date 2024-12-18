@@ -7,4 +7,11 @@ def generate_prime_factors(n):
         raise ValueError("Not an integer")
     if n == 1:
         return []
-    return []
+    factors = []
+    divisor = 2
+    while n > 1:
+        while n % divisor == 0:
+            factors.append(divisor)
+            n //= divisor
+        divisor += 1
+    return factors

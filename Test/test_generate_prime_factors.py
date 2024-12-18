@@ -18,4 +18,10 @@ def test_prime_factors_of_1():
     assert generate_prime_factors(1) == []
 
 
+def test_prime_factors_of_2():
+    assert generate_prime_factors(2) == [2], "Expected [2] for input 2"
+
+
+
+
 
