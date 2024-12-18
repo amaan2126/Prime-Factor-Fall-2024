@@ -27,5 +27,7 @@ def test_prime_factors_of_3():
 def test_prime_factors_of_4():
     assert generate_prime_factors(4) == [2, 2]
 
+def test_prime_factors_of_6():
+    assert generate_prime_factors(6) == [2, 3]
 
 
